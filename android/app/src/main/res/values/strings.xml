@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">imdb</string>
+    <string name="title_activity_main">imdb</string>
+    <string name="package_name">imdb.thomasmore.eindproject</string>
+    <string name="custom_url_scheme">imdb.thomasmore.eindproject</string>
+  <string name="facebook_app_id">193702710283309</string>
+  <string name="fb_login_protocol_scheme">fb193702710283309</string>
+  <string name="facebook_client_token">b548931b5c5c96d440050e8fb82c590f</string>
+
+</resources>

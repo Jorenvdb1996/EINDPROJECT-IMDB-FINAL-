@@ -1,0 +1,30 @@
+<div class="ion-page" id="main-content">
+
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-img class="logo" src="../assets/icon/logo.png"></ion-img>
+      <ion-title>100% Movies</ion-title>
+      <ion-menu-button slot="end" menu="main-menu"></ion-menu-button>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true" class="ion-padding">
+    <ion-toolbar>
+      <ion-title size="large">Alle films:</ion-title>
+    </ion-toolbar>
+    <ion-searchbar cancel-button-icon
+                   style="color: yellow" (ionInput)="SearchbarInput($event.target)"></ion-searchbar>
+    <ion-list *ngIf="(moviefilteredList ); let movies; else loading">
+      <ion-item *ngFor="let m of movies; let i = index">
+        <ion-label>{{m.titel}} ({{m.launchDate}})</ion-label>
+        <ion-button [routerLink]="['wijzigen', m.id]" id="5" color="warning" fill="solid">
+          <ion-icon slot="start" name="eye-outline">
+          </ion-icon>
+          Wijzig
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+
+</div>

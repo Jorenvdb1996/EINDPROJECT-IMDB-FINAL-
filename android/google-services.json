@@ -1,0 +1,100 @@
+{
+  "project_info": {
+    "project_number": "141477191704",
+    "project_id": "imdb-eba1c",
+    "storage_bucket": "imdb-eba1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141477191704:android:f240841a80fc330b09e36d",
+        "android_client_info": {
+          "package_name": "be.thomasmore.graduaten.jorenimdb2023a"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141477191704-5i7dclb4eiqm4imvrdcfc60rdjuo71at.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "be.thomasmore.graduaten.jorenimdb2023a",
+            "certificate_hash": "580e2c82f2d86814f90b844092f6856e935cf11d"
+          }
+        },
+        {
+          "client_id": "141477191704-b6fjt1fgqigbhfdtoni3rn7gn6l2i0vt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqTQb6IDKT8gLuKHFSsXFzv8tWsAIkg1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141477191704-b6fjt1fgqigbhfdtoni3rn7gn6l2i0vt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141477191704:android:26a1993c10e7971009e36d",
+        "android_client_info": {
+          "package_name": "imdb.thomasmore.eindproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141477191704-1mq3s13injic50gnrq509r99tpooive0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "imdb.thomasmore.eindproject",
+            "certificate_hash": "580e2c82f2d86814f90b844092f6856e935cf11d"
+          }
+        },
+        {
+          "client_id": "141477191704-klgt1el37dd5joe09ohvkrt9nvj6pub3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "imdb.thomasmore.eindproject",
+            "certificate_hash": "00b3cec1d8481cf71449b685dd3b2942c3321bc9"
+          }
+        },
+        {
+          "client_id": "141477191704-utjo52hs2eebm6s09rmlk43pcn0sikkk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "imdb.thomasmore.eindproject",
+            "certificate_hash": "829e4ac06b0abaddc8e9351fdb12dfbe9c3bfca0"
+          }
+        },
+        {
+          "client_id": "141477191704-b6fjt1fgqigbhfdtoni3rn7gn6l2i0vt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqTQb6IDKT8gLuKHFSsXFzv8tWsAIkg1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141477191704-b6fjt1fgqigbhfdtoni3rn7gn6l2i0vt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

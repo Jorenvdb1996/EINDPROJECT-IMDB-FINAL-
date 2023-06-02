@@ -1,0 +1,44 @@
+<div class="ion-page" id="main-content">
+
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+
+      <ion-img class="logo" src="../assets/icon/logo.png"></ion-img>
+      <ion-title>100% Movies</ion-title>
+      <ion-menu-button slot="end" menu="main-menu"></ion-menu-button>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true" class="ion-padding">
+    <ion-toolbar>
+      <ion-title size="large">Registreer</ion-title>
+    </ion-toolbar>
+
+    <ion-list>
+      <ion-item >
+        <ion-label>Email:</ion-label>
+        <ion-input [(ngModel)]="username" type="email" placeholder="email@domain.com"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label>Wachtwoord:</ion-label>
+        <ion-input [(ngModel)]="password" type="password" value=""></ion-input>
+        </ion-item>
+    </ion-list>
+
+    <div>
+
+
+      <ion-button (click)="RegisteerNieuweGebruiker()"  color="warning" fill="solid" >
+        <ion-icon slot="start" name="happy-outline">
+        </ion-icon>
+        Registreer
+      </ion-button>
+
+
+    </div>
+
+
+  </ion-content>
+
+
+</div>

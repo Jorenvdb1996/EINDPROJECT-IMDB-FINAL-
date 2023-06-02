@@ -1,0 +1,29 @@
+.menustyle {
+  font-family: 'Amazon Ember Display', sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+}
+ion-content {
+  --ion-background-color: black;
+  --ion-text-color:yellow;
+  --ion-toolbar-background: black;
+
+}
+.logo {
+  width: 20%;
+}
+.detailBox{
+  border-radius-: 15% 15% 15% 15%;
+  background: grey;
+  color: yellow;
+}
+.textYellow{
+  color: yellow;
+}
+
+.vertical-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

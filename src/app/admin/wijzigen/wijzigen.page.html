@@ -1,0 +1,81 @@
+<div class="ion-page" id="main-content">
+
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+
+      <ion-img class="logo" src="../assets/icon/logo.png"></ion-img>
+      <ion-title>100% Movies</ion-title>
+      <ion-menu-button slot="end" menu="main-menu"></ion-menu-button>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true" class="ion-padding">
+    <ion-toolbar>
+      <ion-title size="large">Film 1</ion-title>
+    </ion-toolbar>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Titel:</ion-label>
+        <ion-input [(ngModel)]="movie.titel" label="Titel:" placeholder="Titel"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label>Afspeelduur:</ion-label>
+        <ion-input [(ngModel)]="movie.afspeelduur" label="Afspeelduur" placeholder="Afspeelduur"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label>Budget:</ion-label>
+        <ion-input [(ngModel)]="movie.budget" label="Budget" placeholder="Budget"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Trailer link:</ion-label>
+        <ion-input [(ngModel)]="movie.trailerLink" label="Trailer link:" placeholder="Trailer link"></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label>Lanceerdatum:</ion-label>
+      <ion-input [(ngModel)]="movie.launchDate" label="Trailer link:" placeholder="Lanceerdatum"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Productiehuis:</ion-label>
+        <ion-input [(ngModel)]="movie.productieHuis" label="Productiehuis:" placeholder="Productiehuis"></ion-input>
+      </ion-item>
+      <ion-card style="border-color: grey;border-style: solid" >
+        <ion-item>
+          <ion-label>Cover Afbeelding:</ion-label>
+          <ion-input id="coverText" [readonly]="true" value=""[(ngModel)]="movie.coverAfbeelding" label="Cover Afbeelding:" placeholder="Cover Afbeelding"></ion-input>
+        </ion-item>
+      <ion-item>
+        <app-image-upload></app-image-upload>
+      </ion-item>
+      <ion-item>
+          <ion-img style="width: 10%" id="cover" src=""></ion-img>
+        </ion-item>
+      </ion-card>
+    </ion-list>
+    <div>
+
+      <ion-button (click)="updataData()"  color="warning" fill="solid" >
+        <ion-icon slot="start" name="construct-outline">
+        </ion-icon>
+        Wijzig
+      </ion-button>
+      <ion-button (click)="DeleteMovie()"  color="danger" fill="solid" >
+        <ion-icon slot="trash-bin-outline" name="construct-outline">
+        </ion-icon>
+        Delete movie
+      </ion-button>
+
+
+
+
+
+
+
+    </div>
+
+
+  </ion-content>
+
+
+</div>

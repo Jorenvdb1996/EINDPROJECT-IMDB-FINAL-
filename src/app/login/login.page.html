@@ -1,0 +1,55 @@
+<div class="ion-page" id="main-content">
+
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+
+      <ion-img class="logo" src="../assets/icon/logo.png"></ion-img>
+      <ion-title>100% Movies</ion-title>
+      <ion-menu-button slot="end" menu="main-menu"></ion-menu-button>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true" class="ion-padding">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+
+    <ion-list>
+      <ion-item fill="outline">
+        <ion-label>Email:</ion-label>
+        <ion-input [(ngModel)]="username"type="email" placeholder="email@domain.com"></ion-input>
+      </ion-item>
+      <ion-item fill="outline">
+        <ion-label>Wachtwoord</ion-label>
+        <ion-input  [(ngModel)]="password" type="password" value=""></ion-input>
+      </ion-item>
+    </ion-list>
+    <div>
+        <ion-button (click)="loginEmailandPassword()" color="warning" fill="solid" >
+          <ion-icon slot="start" name="log-in-outline">
+          </ion-icon>
+          Login
+        </ion-button>
+
+      <ion-button routerLink="/registreer" color="warning" fill="solid" >
+        <ion-icon slot="start" name="happy-outline">
+        </ion-icon>
+        Registreer
+      </ion-button>
+    </div>
+    <div>
+      <ion-item>
+        <div slot="start">
+          <ion-icon (click)="authService.signInWithGoogle()" routerLink="/home" size="large" name="logo-google"></ion-icon>
+          <ion-icon (click)="authService.signInWithFacebook()" size="large" name="logo-facebook"></ion-icon>
+          <ion-icon (click)="authService.signInWithTwitter()" size="large" name="logo-twitter"></ion-icon>
+        </div>
+      </ion-item>
+    </div>
+    <ion-item [hidden]=error>
+      <p style="color: red">Ingevoerde gegevens zijn verkeerd!</p>
+    </ion-item>
+  </ion-content>
+
+
+</div>

@@ -1,0 +1,22 @@
+
+<ion-item>
+  gemiddelde Beoordeling : {{averageRating}} / 5
+</ion-item>
+
+
+<ion-item *ngIf="!authService.isLoggedIn()">
+    <ion-button routerLink="/login" id="5" color="warning" fill="solid">
+      <ion-icon slot="start" name="star">
+      </ion-icon>
+      Beoordeel!
+    </ion-button>
+  </ion-item>
+  <ion-item *ngIf="authService.isLoggedIn()">
+    Jou rating: {{rating}}/5
+    <ion-icon name="heart" *ngFor="let num of starNumbers" (click)="rate(num)"
+              [style.color]="getColor(num)">
+    </ion-icon>
+  </ion-item>
+
+
+

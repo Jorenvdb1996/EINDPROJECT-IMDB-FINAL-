@@ -1,0 +1,7 @@
+{
+  "name": "imdb_thomasmore_eindproject",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

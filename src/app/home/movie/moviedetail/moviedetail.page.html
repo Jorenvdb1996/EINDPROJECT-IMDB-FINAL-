@@ -1,0 +1,74 @@
+
+<div class="ion-page" id="main-content">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-img class="logo" slot="start" src="../assets/icon/logo.png"></ion-img>
+      <ion-title>100% Movies</ion-title>
+      <ion-menu-button slot="end" menu="main-menu" ></ion-menu-button>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true" class="ion-padding">
+    <ion-toolbar>
+      <ion-title  size="large">{{movie.titel}}</ion-title>
+    </ion-toolbar>
+    <ion-row>
+      <ion-col offsetXs="0" offsetSm="0" offsetMd="0" offset-lg="0" sizeXs="12" sizeSm="12" sizeMd="12"  size-lg="4">
+        <div class="vertical-center">
+          <ion-img  [hidden]="hiddenImage" style="width: 70%" id="cover" [src]="movie.coverAfbeelding">
+          </ion-img>
+        </div>
+      </ion-col>
+
+      <ion-col offsetXs="0" offsetSm="0" offsetMd="0" offset-lg="0" sizeXs="12" sizeSm="12" sizeMd="12"  size-lg="8">
+        <app-star-rating class="detailBox"></app-star-rating>
+        <ion-card  class= "detailBox">
+          <ion-card-header>
+            <ion-card-title class="textYellow">Afspeelduur</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text class="textYellow">{{movie.afspeelduur}}</ion-text>
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-card-title class="textYellow">Budget</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text class="textYellow">{{movie.budget}}</ion-text>
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-card-title class="textYellow">Productiehuis</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text class="textYellow">{{movie.productieHuis}}</ion-text>
+          </ion-card-content>
+
+          <ion-card-header>
+            <ion-card-title class="textYellow">Lanceerdatum:</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text class="textYellow">{{movie.launchDate}}</ion-text>
+          </ion-card-content>
+
+
+        <ion-card-content>
+          <ion-button (click)="openTrailer(movie.trailerLink)" color="warning" fill="solid">
+            <ion-icon slot="start" name="videocam-outline">
+            </ion-icon>
+            Bekijk Trailer
+          </ion-button>          </ion-card-content>
+        </ion-card>
+
+        <ion-button (click)="share(movie.titel)"  id="5" color="warning" fill="solid">
+          <ion-icon slot="start"   name="share-social-outline">
+          </ion-icon>
+          Deel film
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-content>
+
+
+
+</div>
